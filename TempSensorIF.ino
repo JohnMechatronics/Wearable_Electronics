@@ -1,7 +1,6 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
  
-
 #define ONE_WIRE_BUS 2
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
@@ -40,8 +39,6 @@ void loop(void)
       Serial.println(Temp + " is out side of the range"); 
     }
 
-    
-  
-    delay(1000);
+    delay(50);
 }
 
